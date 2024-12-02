@@ -1,0 +1,334 @@
+/* Sidebar */
+.sidebar {
+    background-color: #004E98;
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    width: 180px;
+  }
+  
+  .sidebar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .sidebar h4,
+  .sidebar p {
+    margin: 0;
+    text-align: center;
+  }
+  
+  .sidebar .nav-link {
+    color: #fff;
+    margin: 10px 0;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #003366;
+    padding-left: 10px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    margin-left: 180px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #fff;
+  }
+  
+  .hero-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  .btn-lg {
+    margin: 5px;
+  }
+  
+  /* About Section */
+  .about {
+    margin-left: 180px;
+    padding: 60px 20px;
+  }
+  
+  .about img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 991.98px) {
+    .sidebar {
+      position: relative;
+      height: auto;
+      width: 100%;
+    }
+  
+    .hero-section {
+      margin-left: 0;
+    }
+  
+    .about {
+      margin-left: 0;
+    }
+  }
+  
+
+
+
+  /* Section Compétences */
+/* Skills Section */
+.competences {
+    margin-left: 180px;
+    padding: 60px 20px;
+  }
+
+  .skill-box {
+    border: 2px solid #004E98;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+
+  .skill-box i {
+    font-size: 40px;
+    color: #004E98;
+  }
+ /* Portfolio Section */
+.portfolio-section {
+    padding: 80px 20px; /* Espacement plus grand pour desktop */
+    background-color: #f8f9fa; /* Fond clair pour une meilleure lisibilité */
+  }
+  
+  .portfolio-section h2 {
+    font-size: 2.5rem; /* Titre plus grand pour desktop */
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px; /* Coins légèrement arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05); /* Effet de zoom sur la carte */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  
+  .project-name {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover .project-name {
+    opacity: 1; /* Rendu visible uniquement au survol */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .portfolio-section {
+      padding: 40px 10px; /* Réduction des marges sur mobile */
+    }
+  
+    .portfolio-section h2 {
+      font-size: 2rem; /* Taille réduite du titre */
+    }
+  
+    .portfolio-item {
+      margin-bottom: 20px;
+    }
+  
+    .project-name {
+      font-size: 0.95rem; /* Taille réduite pour mobile */
+      bottom: 10px;
+      left: 10px;
+    }
+  }
+
+
+  /* Augmenter encore l'espace entre le menu et la section */
+.portfolio-section .container {
+    margin-left: 300px; /* Augmenté de 260px à 300px */
+    max-width: calc(100% - 300px); /* Réduire la largeur pour respecter l'espace laissé */
+}
+
+/* Règles pour les écrans plus petits */
+@media (max-width: 768px) {
+    .portfolio-section .container {
+        margin-left: 0; /* Pas d'espacement sur mobile */
+        max-width: 100%; /* Le contenu occupe toute la largeur disponible */
+    }
+}
+
+
+
+  
+  
+        /* Couleur blanche du menu burger */
+        .navbar-toggler {
+            border: none; /* Supprime la bordure */
+          }
+          
+          .navbar-toggler-icon {
+            background-color: #fff; /* Icône burger en blanc */
+          }
+          
+          /* Suppression du fond du menu déroulant */
+          .navbar-collapse {
+            background-color: transparent !important; /* Fond transparent */
+          }
+          
+          /* Liens du menu burger */
+          .navbar-nav .nav-link {
+            color: #fff; /* Texte en blanc */
+            font-weight: bold;
+            transition: color 0.3s ease;
+          }
+
+
+
+
+          /* Section Services */
+#services {
+    background-color: #f8f9fa; /* Couleur d'arrière-plan douce */
+  }
+  
+  .service-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-box i {
+    color: #004E98; /* Couleur des icônes */
+  }
+  
+  /* Marges ajustées pour les petits écrans */
+  @media (max-width: 576px) {
+    #services {
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+  }
+
+
+  /* Aligner la section à droite */
+#services {
+    background-color: #f8f9fa; /* Couleur d'arrière-plan douce */
+    margin-left: auto; /* Force l'alignement à droite */
+    margin-right: 0; /* S'assure qu'il n'y a pas d'espace à droite */
+    max-width: 85%; /* Ajustez la largeur pour contrôler l'espacement */
+}
+
+/* Options pour petits écrans */
+@media (max-width: 576px) {
+    #services {
+        max-width: 100%; /* Remplit l'espace disponible sur petits écrans */
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+}
+
+.container-parent {
+    display: flex;
+    flex-direction: row; /* Menu et services côte à côte */
+    justify-content: space-between; /* Gère l'espacement entre les deux */
+}
+
+
+  /* Contact section */
+.contact {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  /* Espacement pour les écrans plus grands */
+  @media (min-width: 992px) {
+    .contact {
+      margin-left: 20vw;
+      margin-right: 10vw;
+    }
+  }
+
+
+
+
+
+
+
+
+ /* Tools Section */
+ .tools {
+    margin-left: 180px;
+    padding: 60px 20px;
+    background-color: #f8f9fa;
+  }
+
+  .tool-box {
+    border: 2px solid #004E98;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .tool-box i {
+    font-size: 40px;
+    color: #004E98;
+  }
